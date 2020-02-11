@@ -20,7 +20,7 @@ public class HelloWorld {
      */
     public static void main(String[] args) {
 
-        String firstProgrammer = "Ada Lovelace";
+        String firstProgrammer = "Ada Lovelace"; //this is the longer version of her name
 
         System.out.println("Hello World");
 
