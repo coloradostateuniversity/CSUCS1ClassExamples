@@ -3,6 +3,8 @@ package Unit1Examples;
 /**
  * <h1>Simple method examples</h1>
  *
+ * Downloadable version found at : https://github.com/coloradostateuniversity/CSUCS1ClassExamples
+ *
  * @author Albert Lionelle <br>
  *         lionelle@colostate.edu <br>
  *         Computer Science Department <br>

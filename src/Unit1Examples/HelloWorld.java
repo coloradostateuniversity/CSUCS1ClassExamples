@@ -4,6 +4,8 @@ package Unit1Examples;
  * <h1>Hello World Example</h1>
  * This is a basic example of a first program printing out to the terminal
  *
+ * Example Available for Download at https://github.com/coloradostateuniversity/CSUCS1ClassExamples
+ *
  * @author Albert Lionelle <br>
  *         lionelle@colostate.edu <br>
  *         Computer Science Department <br>
