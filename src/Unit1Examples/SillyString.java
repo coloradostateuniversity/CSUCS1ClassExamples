@@ -28,7 +28,7 @@ public class SillyString {
     }
 
     public static String percentFormat(double val) {
-        return String.format("%.0f%%", val);
+        return String.format("%.2f%%", val);
     }
 
     public static void main(String[] args) {
