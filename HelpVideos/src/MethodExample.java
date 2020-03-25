@@ -1,5 +1,3 @@
-package Unit1Examples;
-
 /**
  * <h1>Simple method examples</h1>
  *
