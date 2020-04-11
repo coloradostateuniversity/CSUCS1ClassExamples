@@ -1,4 +1,4 @@
-import SupportClasses07a.Hero
+import SupportClasses07a.Hero;
 
 /**
  *
@@ -19,7 +19,7 @@ public class FinalVariables07a {
     // question 1 - will this compile - includes code from support class
     public static void main(String[] args) {
         System.out.println(Hero.LEAGUE);
-        Hero.LEAGUE = "Villain"; // ERROR!! Won’t compile
+       // Hero.LEAGUE = "Villain"; // ERROR!! Won’t compile
 
         Hero ajax = new Hero(); // must build the object
         System.out.println(ajax.powerLookup(-1));
