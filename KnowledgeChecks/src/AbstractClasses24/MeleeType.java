@@ -9,5 +9,5 @@ package AbstractClasses24;
  */
 public interface MeleeType {
     boolean hasSwordAttack();
-    int calcSwordDamage();
+    double calcSwordDamage();
 }

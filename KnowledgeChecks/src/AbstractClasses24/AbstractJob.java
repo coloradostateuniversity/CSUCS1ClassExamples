@@ -10,17 +10,28 @@ import java.util.ArrayList;
  * @version 202010
  */
 abstract public class AbstractJob {
-    private String name;
-    protected ArrayList<Item> inventory = new ArrayList<>();
+    protected String name;
 
-    private int armor;
-    private int attack;
+    private int armor = 1;
+    private int attack = 1;
 
     abstract double getJobModifier(); // unique to sub classes
 
     public double getArmor() {
         // make other calculations based on inventory items
         return armor * getJobModifier();
+    }
+
+    public void setArmorBase(int val) {
+        armor = val;
+    }
+
+    public double getAttack() {
+        return attack * getJobModifier();
+    }
+
+    public void setAttackBase(int val) {
+        attack = val;
     }
 
     public AbstractJob(String name) {
