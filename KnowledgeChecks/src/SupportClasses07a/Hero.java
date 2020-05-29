@@ -15,7 +15,7 @@ public class Hero {
         String rtn = LEAGUE + ": Flight";
 
         if (which < 0) {
-            rtn = LEAGUE + ": Laser Eyes";  // ERROR!! won’t compile
+            rtn = LEAGUE + ": Laser Eyes"; 
         }
 
         return rtn;
