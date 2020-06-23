@@ -17,6 +17,11 @@ public class Tiger extends Feline implements Swimmer{
     public boolean canSwim() {
         return true;
     }
+    
+    public String toString() {
+        return String.format("swimSpeed:%s, stripCount:%s", 
+                getSpeed(), getStripCount());
+    }
 
     public int getStripCount() {
         return stripCount;
@@ -24,7 +29,17 @@ public class Tiger extends Feline implements Swimmer{
 
     public static void main(String[] args) {
         Tiger tony = new Tiger();
-        boolean isFeline = tony instanceof Feline;
+        Feline felix = new Feline();
+        
+        AbstractAnimal a = felix;
+        Object catlike3 = tony;
+        
+        System.out.println(felix);
+        System.out.println(tony);
+        System.out.println(a);
+        System.out.println(catlike3);
+        
+        
 
 
     }

@@ -5,17 +5,17 @@ package AbstractClasses24;
  * @version 1.0
  */
 public class Paladin extends AbstractJob implements MeleeType, HealerType, Comparable<Paladin> {
-    private double modifier = 1.6;
-
-    @Override
-    double getJobModifier() {
-        return modifier;
-    }
+    
 
     public Paladin(String name) {
         super(name);
     }
 
+    @Override
+    double getJobModifier() {
+        return getLevel();
+    }
+    
     @Override
     public double getCureModifier() {
         return 1.5;
@@ -43,7 +43,7 @@ public class Paladin extends AbstractJob implements MeleeType, HealerType, Compa
         }else if(this.getArmor() < o.getArmor()) {
             return -1;
         }else {
-            return 0;// this.name.compareTo(o.name);
+            return 0;
         }
     }
 }

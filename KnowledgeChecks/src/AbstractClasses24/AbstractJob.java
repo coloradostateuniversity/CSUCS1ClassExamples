@@ -1,7 +1,5 @@
 package AbstractClasses24;
 
-import java.util.ArrayList;
-
 /**
  * @author Albert Lionelle <br>
  *         lionelle@colostate.edu <br>
@@ -11,14 +9,19 @@ import java.util.ArrayList;
  */
 abstract public class AbstractJob {
     protected String name;
-
+    private static int jobCounter = 0;
+    
     private int armor = 1;
     private int attack = 1;
+    private int level = 1;
+    
 
-    abstract double getJobModifier(); // unique to sub classes
-
+    abstract double getJobModifier(); 
+    
+    public static int getJobCounter() {
+        return jobCounter;
+    }
     public double getArmor() {
-        // make other calculations based on inventory items
         return armor * getJobModifier();
     }
 
@@ -34,7 +37,17 @@ abstract public class AbstractJob {
         attack = val;
     }
 
+    public void setLevel(int lvl) {
+        level = lvl;
+    }
+    
+    public int getLevel() {
+        return level;
+    }
+
+
     public AbstractJob(String name) {
         this.name = name;
+        jobCounter++;
     }
 }

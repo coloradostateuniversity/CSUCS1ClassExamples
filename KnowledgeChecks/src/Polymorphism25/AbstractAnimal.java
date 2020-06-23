@@ -20,4 +20,9 @@ public abstract class AbstractAnimal {
     public Habitat getHabitat() { return habitat;}
     public void setHabitat(Habitat habitat) { this.habitat = habitat;}
 
+    public String toString() {
+        return String.format("size:%s, habitat:%s, sound:%s",
+                getSize(), getHabitat(), getSound());
+    }
+    
 }
